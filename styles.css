@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 @import url(./vendor/fonts/fonts.css);
 @import url(./vendor/normalize.css);
 
@@ -301,18 +294,26 @@
   display: -ms-flexbox;
   display: flex;
   min-width: 282px;
+  max-width: 282px;
   width: 100%;
-  max-height: 160px; /* Firefox */ /* Safari, Google Chrome */ /* KHTML */ /* Opera */
+  max-height: 160px; /* Firefox */ /* Safari, Google Chrome */ /* KHTML */ /* Opera*/
   border-radius: 16px;
   background: var(--gray-0-white, #fff);
   -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05);
 }
-.carousel__box:nth-child(2) {
+.carousel__box:nth-child(2n) {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+.carousel__box:nth-child(2n + 1) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .carousel__title {
@@ -325,7 +326,14 @@
   font-weight: 700;
   line-height: 24px;
   text-wrap: wrap;
+}
+.carousel__title:nth-child(2n) {
   max-width: 250px;
+  width: 100%;
+}
+
+.carousel__title:nth-child(2n + 1) {
+  max-width: 240px;
   width: 100%;
 }
 
@@ -344,10 +352,20 @@
 }
 
 .carousel__wrapper {
+  margin: 0;
+  padding: 0;
+}
+.carousel__wrapper:nth-child(2n + 1) {
+  min-width: 150px;
+  width: 100%;
+}
+.carousel__wrapper:nth-child(2n) {
+  max-width: 250px;
+  width: 100%;
 }
 
 .carousel__img {
-  height: 162px;
+  height: 160px;
   width: 104px;
 }
 
