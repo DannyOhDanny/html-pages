@@ -8,7 +8,12 @@
 .article__header-wrapper {
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   gap: 12px;
 }
@@ -54,7 +59,12 @@
 .article__button-wrapper {
   margin: 16px 0 0 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   justify-items: baseline;
   gap: 8px;
@@ -66,9 +76,16 @@
   width: 224px;
   height: 48px;
   padding: 15px 57px 15px 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-negative: 0;
   flex-shrink: 0;
   border-radius: 12px;
   background: var(--green-500-primary, #36ba5f);
