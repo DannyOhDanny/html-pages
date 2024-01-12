@@ -1,5 +1,5 @@
-const carousel = document.querySelector('.carousel'),
-  firstImg = carousel.querySelectorAll('.carousel__box')[0],
+const carousel = document.querySelector('.gallery__carousel'),
+  firstImg = carousel.querySelectorAll('.gallery__carousel-box')[0],
   arrowIcons = document.querySelectorAll('.gallery__wrapper button');
 let isDragStart = false,
   isDragging = false,

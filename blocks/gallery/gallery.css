@@ -1,0 +1,194 @@
+.gallery__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1200px;
+  position: relative;
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.gallery__title {
+  margin: 0 auto;
+  padding: 0 0 32px 0;
+  color: var(--gray-900-black, #1a1a1a);
+  font-family: 'Museo', Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.gallery__wrapper button {
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343f4f;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  fill: var(--gray-0-white, #fff);
+  -webkit-filter: drop-shadow(0px 1px 7px rgba(0, 0, 0, 0.05));
+  filter: drop-shadow(
+    0px 1px 7px rgba(0, 0, 0, 0.05)
+  ); /* Firefox */ /* Safari, Google Chrome */ /* KHTML */ /* Opera */
+  border-radius: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: -webkit-transform 0.1s linear;
+  transition: -webkit-transform 0.1s linear;
+  -o-transition: transform 0.1s linear;
+  transition: transform 0.1s linear;
+  transition: transform 0.1s linear, -webkit-transform 0.1s linear;
+  border: none;
+}
+.gallery__wrapper button:active {
+  -webkit-transform: translateY(-50%) scale(0.9);
+  -ms-transform: translateY(-50%) scale(0.9);
+  transform: translateY(-50%) scale(0.9);
+}
+.gallery__wrapper button:hover {
+  background: #f2f2f2;
+}
+
+.gallery__wrapper button:first-child {
+  display: none;
+}
+.gallery__wrapper button:last-child {
+  right: 0;
+}
+.gallery__wrapper .gallery__carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  gap: 24px;
+  min-width: 250px;
+  width: 100%;
+  height: 160px;
+}
+.carousel.dragging {
+  cursor: -webkit-grab;
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.gallery__carousel.dragging div {
+  pointer-events: none;
+}
+.gallery__carousel-box {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 282px;
+  max-width: 282px;
+  width: 100%;
+  max-height: 160px; /* Firefox */ /* Safari, Google Chrome */ /* KHTML */ /* Opera*/
+  border-radius: 16px;
+  background: var(--gray-0-white, #fff);
+  -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05);
+}
+.gallery__carousel-box:nth-child(2n) {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.gallery__carousel-box:nth-child(2n + 1) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.gallery__carousel-title {
+  margin: 0;
+  padding: 16px 0 0 16px;
+  color: var(--gray-900-black, #1a1a1a);
+  font-family: 'Museo', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  text-wrap: wrap;
+}
+.gallery__carousel-title:nth-child(2n) {
+  max-width: 250px;
+  width: 100%;
+}
+
+.gallery__carousel-title:nth-child(2n + 1) {
+  max-width: 240px;
+  width: 100%;
+}
+
+.gallery__carousel-paragraph {
+  margin: 0;
+  padding: 8px 0 0 16px;
+  color: var(--gray-500, #949494);
+  font-family: 'Museo', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  text-wrap: wrap;
+  max-width: 250px;
+  width: 100%;
+}
+
+.gallery__carousel-wrapper {
+  margin: 0;
+  padding: 0;
+}
+.gallery__carousel-wrapper:nth-child(2n + 1) {
+  min-width: 150px;
+  width: 100%;
+}
+.gallery__carousel-wrapper:nth-child(2n) {
+  max-width: 250px;
+  width: 100%;
+}
+
+.gallery__carousel-img {
+  height: 160px;
+  width: 104px;
+}
+
+.gallery__carousel div {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.gallery__carousel div:first-child {
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .gallery__carousel div {
+    width: calc(100% / 2);
+  }
+}
+@media screen and (max-width: 550px) {
+  .gallery__carousel div {
+    width: 100%;
+  }
+}
