@@ -1,0 +1,77 @@
+.article {
+  margin: 0;
+  padding: 0;
+}
+.article__conatainer {
+}
+
+.article__header-wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.article__header {
+  margin: 0 0 16px 0;
+  padding: 0;
+  color: var(--gray-900-black, #1a1a1a);
+  font-family: 'Museo', Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 28.8px;
+}
+.article__img {
+  margin: 0 0 16px 0;
+  padding: 0;
+}
+.article__text {
+  margin: 0;
+  padding: 0;
+  max-width: 690px;
+  width: 100%;
+  color: var(--gray-900-black, #1a1a1a);
+  font-family: 'Museo', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+}
+.article__paragraph {
+  margin: 40px 0 0 0;
+  padding: 0;
+  max-width: 363px;
+  width: 100%;
+  color: var(--gray-900-black, #1a1a1a);
+  font-family: 'Museo', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15.6px;
+}
+.article__button-wrapper {
+  margin: 16px 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-items: baseline;
+  gap: 8px;
+}
+.article__button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 224px;
+  height: 48px;
+  padding: 15px 57px 15px 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: var(--green-500-primary, #36ba5f);
+  color: #fff;
+  gap: 8px;
+}

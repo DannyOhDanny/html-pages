@@ -4,6 +4,7 @@
 @import url(./blocks/contact/contact.css);
 @import url(./blocks/gallery/gallery.css);
 @import url(./blocks/query/query.css);
+@import url(./blocks/article/article.css);
 
 .root {
   font-family: 'Museo', Arial, Helvetica, sans-serif;
@@ -14,4 +15,18 @@
   line-height: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+.root-2 {
+  font-family: 'Museo', Arial, Helvetica, sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 22px 40px 80px 40px;
+  background: #fff;
+  line-height: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
 }
