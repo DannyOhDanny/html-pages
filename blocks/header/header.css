@@ -12,7 +12,7 @@
 .header__title {
   padding: 40px 0 0 0;
   margin: 0 auto;
-  letter-spacing: 1.2px;
+  letter-spacing: 0.023em;
   font-family: 'Museo', Arial, Helvetica, sans-serif;
   font-weight: 900;
   color: var(--gray-0-white, #fff);
@@ -33,6 +33,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 23.8px;
+  letter-spacing: 0.01em;
   z-index: 4;
 }
 
@@ -76,7 +77,7 @@
   align-items: center;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  gap: 8px; /* Firefox */ /* Safari, Google Chrome */ /* KHTML */ /* Opera */
+  gap: 8px;
   border-radius: 12px;
   background: var(--gray-0-white, #fff);
   z-index: 2;
@@ -139,9 +140,12 @@
 
 @media screen and (max-width: 400px) {
   .header__title {
-    font-size: 40px;
+    font-size: 38px;
+    line-height: 40px;
   }
   .header__subtitle {
+    padding-top: 20px;
     font-size: 13px;
+    line-height: 17px;
   }
 }

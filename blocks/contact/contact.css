@@ -40,7 +40,7 @@
   font-weight: 700;
   line-height: 48px;
   word-wrap: break-word;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.01em;
 }
 
 .contact__icon-wrapper {
@@ -50,7 +50,7 @@
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 14px;
   width: 50%;
   -ms-flex-wrap: wrap;
@@ -66,6 +66,11 @@
   opacity: 0.6;
 }
 
+@media screen and (max-width: 1011px) {
+  .contact__icon-wrapper {
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 800px) {
   .contact {
     flex-direction: column;
@@ -91,5 +96,22 @@
   }
   .contact__icon-wrapper {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contact__text-wrapper {
+    width: 80%;
+  }
+  .contact__icon-wrapper {
+    margin: 0 auto 40px auto;
+    width: 80%;
+  }
+  .contact__title {
+    font-size: 27px;
+    line-height: 32px;
+  }
+  .contact__icon-wrapper {
+    justify-content: center;
   }
 }
