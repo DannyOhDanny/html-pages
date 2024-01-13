@@ -4,7 +4,9 @@
 }
 .article__conatainer {
 }
-
+.article__icon {
+  text-decoration: none;
+}
 .article__header-wrapper {
   margin: 0;
   padding: 0;
@@ -71,7 +73,6 @@
   -ms-flex-direction: row;
   flex-direction: row;
   justify-items: baseline;
-  gap: 8px;
 }
 .article__button {
   margin: 0;
@@ -97,6 +98,12 @@
   gap: 8px;
   cursor: pointer;
 }
+.article__icon-wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+}
 .article__icon {
   margin: 0;
   padding: 0;
@@ -111,5 +118,9 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+  }
+  .article__icon-wrapper {
+    gap: 0;
+    margin-top: 10px;
   }
 }
