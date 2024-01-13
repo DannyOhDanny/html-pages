@@ -16,6 +16,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 .root-2 {
   font-family: 'Museo', Arial, Helvetica, sans-serif;
   max-width: 1280px;
@@ -25,8 +26,4 @@
   line-height: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
 }

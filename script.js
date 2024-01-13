@@ -1,6 +1,7 @@
 const carousel = document.querySelector('.gallery__carousel'),
   firstImg = carousel.querySelectorAll('.gallery__carousel-box')[0],
   arrowIcons = document.querySelectorAll('.gallery__wrapper button');
+
 let isDragStart = false,
   isDragging = false,
   prevPageX,

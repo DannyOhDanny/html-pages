@@ -10,6 +10,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
 }
 
@@ -68,11 +71,16 @@
 
 @media screen and (max-width: 1011px) {
   .contact__icon-wrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 }
 @media screen and (max-width: 800px) {
   .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .contact__text-wrapper {
@@ -86,6 +94,8 @@
     padding: 0;
     max-width: 640px;
     width: 100%;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
   }
 }
@@ -112,6 +122,8 @@
     line-height: 32px;
   }
   .contact__icon-wrapper {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
 }
