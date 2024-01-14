@@ -129,9 +129,9 @@
 }
 .article__button:hover {
   opacity: 0.6;
-  -webkit-transform: opacity 1s ease-in;
-  -ms-transform: opacity 1s ease-in;
-  transform: opacity 1s ease-in;
+  -webkit-transition: opacity 1s ease-in;
+  -o-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
 }
 .article__button:active {
   border: 1px solid blue;
@@ -142,9 +142,9 @@
 
 .article__icon:hover {
   opacity: 0.6;
-  -webkit-transform: opacity 1s ease-in;
-  -ms-transform: opacity 1s ease-in;
-  transform: opacity 1s ease-in;
+  -webkit-transition: opacity 1s ease-in;
+  -o-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
 }
 .article__icon:focus {
   border: 1px solid gray;
@@ -156,9 +156,9 @@
 }
 .article__img:hover {
   opacity: 0.6;
-  -webkit-transform: opacity 1s ease-in;
-  -ms-transform: opacity 1s ease-in;
-  transform: opacity 1s ease-in;
+  -webkit-transition: opacity 1s ease-in;
+  -o-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
 }
 .article__img:focus {
   border: 1px solid gray;
