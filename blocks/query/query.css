@@ -147,14 +147,10 @@
   line-height: 24px;
 }
 .query__box:hover {
-  scale: 103%;
-  opacity: 0.7;
   -o-transition: scale 0.5s ease-in;
   -webkit-transition: scale 0.5s ease-in;
+  scale: 103%;
   transition: scale 0.5s ease-in;
-  -webkit-transition: opacity 0.5s ease-in;
-  -o-transition: opacity 0.5s ease-in;
-  transition: opacity 0.5s ease-in;
 }
 .query__box:active {
   border: 1px solid #36ba5f;
