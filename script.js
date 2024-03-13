@@ -11,7 +11,8 @@ let isDragStart = false,
 const showHideIcons = () => {
   let scrollWidth = carousel.scrollWidth - carousel.clientWidth;
   arrowIcons[0].style.display = carousel.scrollLeft == 0 ? 'none' : 'block';
-  arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? 'none' : 'block';
+  arrowIcons[1].style.display =
+    carousel.scrollLeft == scrollWidth ? 'none' : 'block';
 };
 arrowIcons.forEach(icon => {
   icon.addEventListener('click', () => {
@@ -33,7 +34,8 @@ const autoSlide = () => {
     return (carousel.scrollLeft +=
       positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff);
   }
-  carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+  carousel.scrollLeft -=
+    positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
 };
 const dragStart = e => {
   isDragStart = true;
@@ -62,3 +64,17 @@ document.addEventListener('mousemove', dragging);
 carousel.addEventListener('touchmove', dragging);
 document.addEventListener('mouseup', dragStop);
 carousel.addEventListener('touchend', dragStop);
+
+const resetCarouselPosition = () => {
+  carousel.scrollLeft = 0;
+};
+
+window.addEventListener('beforeunload', () => {
+  resetCarouselPosition();
+  carousel.removeEventListener('mousedown', dragStart);
+  carousel.removeEventListener('touchstart', dragStart);
+  document.removeEventListener('mousemove', dragging);
+  carousel.removeEventListener('touchmove', dragging);
+  document.removeEventListener('mouseup', dragStop);
+  carousel.removeEventListener('touchend', dragStop);
+});

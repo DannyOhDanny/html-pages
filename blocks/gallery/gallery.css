@@ -5,7 +5,10 @@
   display: flex;
   max-width: 1200px;
   position: relative;
+  /* Лишние тени */
+  background: var(--gray-0-white, #fff);
   -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
 }
 
@@ -21,6 +24,7 @@
   text-align: center;
   letter-spacing: 0.01em;
 }
+
 .gallery__wrapper button {
   top: 50%;
   height: 44px;
@@ -101,6 +105,7 @@
   width: 100%;
   max-height: 160px;
   border-radius: 16px;
+  /* Лишние тени */
   background: var(--gray-0-white, #fff);
   -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.05);

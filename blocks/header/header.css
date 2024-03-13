@@ -7,6 +7,7 @@
   position: relative;
   z-index: 0;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 .header__title {
@@ -90,6 +91,8 @@
   border-radius: 12px;
   background: var(--gray-0-white, #fff);
   z-index: 2;
+  border: none;
+  text-decoration: none;
 }
 
 .header__description {
@@ -104,18 +107,16 @@
   cursor: pointer;
   text-decoration: none;
 }
-.header__description:hover {
+.header__container:hover {
   opacity: 0.6;
-  -webkit-transition: opacity 1s ease-in;
-  -o-transition: opacity 1s ease-in;
-  transition: 1s opacity ease-in;
 }
-
-.header__description:active {
-  color: #93bbea;
+.header__container:focus {
+  border: 1px solid gray;
+  border-radius: 12px;
 }
-.header__description:focus {
-  color: lightgray;
+.header__container:active {
+  border: 1px solid gray;
+  border-radius: 12px;
 }
 
 .header__arrows-img {
