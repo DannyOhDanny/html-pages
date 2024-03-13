@@ -26,7 +26,7 @@
 .article__header {
   margin: 0 0 16px 0;
   padding: 0;
-  color: var(--gray-900-black, #1a1a1a);
+  color: #1a1a1a;
   font-family: 'Museo', Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -44,7 +44,7 @@
   padding: 0;
   max-width: 690px;
   width: 100%;
-  color: var(--gray-900-black, #1a1a1a);
+  color: #1a1a1a;
   font-family: 'Museo', Arial, Helvetica, sans-serif;
   font-size: 15px;
   font-style: normal;
@@ -57,7 +57,7 @@
   padding: 0;
   max-width: 370px;
   width: 100%;
-  color: var(--gray-900-black, #1a1a1a);
+  color: #1a1a1a;
   font-family: 'Museo', Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-style: normal;
@@ -102,7 +102,7 @@
   -webkit-flex-shrink: 0;
   flex-shrink: 0;
   border-radius: 12px;
-  background: var(--green-500-primary, #36ba5f);
+  background: #36ba5f;
   color: #fff;
   cursor: pointer;
   opacity: 1;

@@ -16,7 +16,7 @@
   letter-spacing: 0.023em;
   font-family: 'Museo', Arial, Helvetica, sans-serif;
   font-weight: 900;
-  color: var(--gray-0-white, #fff);
+  color: #fff;
   text-align: center;
   font-size: 60px;
   line-height: 72px;
@@ -27,7 +27,7 @@
   margin: 0 auto;
   max-width: 535px;
   width: 100%;
-  color: var(--gray-0-white, #fff);
+  color: #fff;
   text-align: center;
   font-family: 'Museo', Arial, Helvetica, sans-serif;
   font-size: 17px;
@@ -89,14 +89,14 @@
   flex-shrink: 0;
   gap: 8px;
   border-radius: 12px;
-  background: var(--gray-0-white, #fff);
+  background: #fff;
   z-index: 2;
   border: none;
   text-decoration: none;
 }
 
 .header__description {
-  color: var(--gray-900-black, #1a1a1a);
+  color: #1a1a1a;
   text-align: center;
   font-family: 'Museo', Arial, Helvetica, sans-serif;
   font-size: 15px;

@@ -20,7 +20,7 @@
 .query__title {
   margin: 80px 563px 32px 553px;
   padding: 0;
-  color: var(--gray-900-black, #1a1a1a);
+  color: #1a1a1a;
   font-family: 'Museo', Arial, Helvetica, sans-serif;
   font-size: 40px;
   font-weight: 700;
@@ -67,7 +67,7 @@
   -webkit-justify-content: space-between;
   justify-content: space-between;
   border-radius: 16px;
-  background: var(--gray-0-white, #fff);
+  background: #fff;
   -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.05);
@@ -95,7 +95,7 @@
   margin: 19px 17px 20px 23px;
   padding: 0;
   text-decoration: none;
-  color: var(--gray-900-black, #1a1a1a);
+  color: #1a1a1a;
   text-align: left;
   opacity: 1;
   display: -webkit-box;
@@ -123,7 +123,7 @@
 }
 
 .query__paragraph {
-  color: var(--gray-500, #949494);
+  color: #949494;
   font-family: 'Museo', Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-style: normal;
@@ -139,7 +139,7 @@
 .query__link-title {
   margin: 0;
   padding: 0;
-  color: var(--gray-900-black, #1a1a1a);
+  color: #1a1a1a;
   font-family: 'Museo', Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-style: normal;
